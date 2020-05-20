@@ -2,6 +2,11 @@
 
 To create better isolation, and to prevent myself to get shut out of my own PC, I created this setup to be able to log on to my company VPN via Windows Sandbox.
 
+## Requirements
+
+1. Windows 10 Professional edition. Home edition does not have it. *If you have MSDN and you're sitting at home, then check your MSDN account and see if you're covered for an upgrade.*
+2. Windows Sandbox feature must be installed.
+
 ## Get started
 
 1. Clone the repo to "C:\virtualization" by using `git clone https://github.com/JohnyWS/cs-go-config.git sandbox`
