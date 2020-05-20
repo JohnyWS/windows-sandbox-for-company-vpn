@@ -2,8 +2,6 @@
 
 To create better isolation, and to prevent myself to get shut out of my own PC, I created this setup to be able to log on to my company VPN via Windows Sandbox.
 
-Because of limitations in Windows Sandbox (at the time of this writing), there a few hardcodings in here, but if you follow those, or just change them, you're good to go.
-
 ## Get started
 
 1. Clone the repo to "C:\virtualization" by using `git clone https://github.com/JohnyWS/cs-go-config.git sandbox`
@@ -11,3 +9,14 @@ Because of limitations in Windows Sandbox (at the time of this writing), there a
 2. Add your rdp files to the ressources folder. Read the /ressources/suggestions.md for more info.
 3. Add your company vpn installer exe to `/software` but named `company-vpn.exe`
 4. Run `/company-sandbox-runner.wsb` and you're good to go (requires Windows Sandbox to be installed)
+
+## Current limitations
+
+1. The hardcoded paths are there, because variables are not, yet, supported - so for now, the "get started" section must be followed to the letter, or changes must be made if you deviate from the instructions.
+2. No multi-screen setup.
+
+## TODO
+
+1. More docs to help people better getting started
+2. Scripting help that can fix some of the hardcodings in here
+3. You tell me! :)
