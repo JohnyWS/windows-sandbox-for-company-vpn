@@ -1,0 +1,19 @@
+<Configuration>
+  <VGpu>Enabled</VGpu>
+  <Networking>Enabled</Networking>
+  <AudioInput>Enabled</AudioInput>
+  <VideoInput>Enabled</VideoInput>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\virtualization\sandbox\company-sandbox-storage\software</HostFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\virtualization\sandbox\company-sandbox-storage\ressources</HostFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>C:\Users\WDAGUtilityAccount\Desktop\software\startup.cmd</Command>
+  </LogonCommand>
+</Configuration>
