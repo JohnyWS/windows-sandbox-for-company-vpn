@@ -5,15 +5,15 @@
   <VideoInput>Enabled</VideoInput>
   <MappedFolders>
     <MappedFolder>
-      <HostFolder>C:\virtualization\sandbox\company-sandbox-storage\software</HostFolder>
+      <HostFolder>C:\virtualization\sandbox\template\software</HostFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
     <MappedFolder>
-      <HostFolder>C:\virtualization\sandbox\company-sandbox-storage\ressources</HostFolder>
+      <HostFolder>C:\virtualization\sandbox\template\ressources</HostFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
-    <Command>C:\Users\WDAGUtilityAccount\Desktop\software\startup.cmd</Command>
+    <Command>C:\Users\WDAGUtilityAccount\Desktop\software\startup.template.cmd</Command>
   </LogonCommand>
 </Configuration>
