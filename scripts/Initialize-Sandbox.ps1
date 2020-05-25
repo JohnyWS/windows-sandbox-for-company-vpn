@@ -12,6 +12,11 @@ $ressourcesDir = "$templateDir/ressources"
 $softwareDir = "$templateDir/software"
 $copyRessourcesDir = $true
 
+if((Get-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClientVM').State -ne 'Enabled') {
+  Write-Information 'Enabling feature ...'
+  Enable-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClientVM'
+}
+
 if(Test-Path $outputDir) {
   Write-Warning "Outputfolder already exists. The folder ($outputDir) will now be deleted. Input 'All' to make sure all files are correctly deleted to continue this operation."
 
