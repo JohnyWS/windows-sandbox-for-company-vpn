@@ -1,3 +1,9 @@
+# Completely ignore binaries
+*.dll
+*.exe
+*.msi
+*.rdp
+
 # Ignore all files in template/software except startup template file:
 template/software
 !template/software/startup.template.cmd
