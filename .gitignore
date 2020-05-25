@@ -1,2 +1,10 @@
-template/software/*.exe
-template/ressources/*.rdp
+# Ignore all files in template/software except startup template file:
+template/software
+!template/software/startup.template.cmd
+
+# Ignore all files in template/ressources except suggestions.md file:
+template/ressources
+!template/ressources/suggestions.md
+
+# Always ignore output folder
+output
