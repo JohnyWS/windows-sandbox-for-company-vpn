@@ -18,7 +18,7 @@ For the quick setup, which includes convention based configs, you can quickly ge
 2. Enable Windows Sandbox optional feature by running this oneliner in an PowerShell admin prompt:  
    `if((Get-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClientVM').State -ne 'Enabled'){Write-Host 'Enabling feature ...';Enable-WindowsOptionalFeature -Online -FeatureName 'Containers-DisposableClientVM'}Write-Host 'All set!'`  
    *TODO: Document feature and supply other ways of doing the same thing.*
-3. Add your rdp files to the [ressources folder](template/ressources). Read the [suggestions docs](template//ressources/suggestions.md) for more info.
+3. Add your rdp files to the [resources folder](template/resources). Read the [suggestions docs](template//ressurces/suggestions.md) for more info.
 4. Add your company vpn installer exe to [the software template folder](template/software) but named `company-vpn.exe`
 5. Run [template/company-sandbox-runner.wsb](template/company-sandbox-runner.wsb) and you're good to go!
 
@@ -27,7 +27,7 @@ For the quick setup, which includes convention based configs, you can quickly ge
 To better suit your custom usecase, a templating system has been introduced, that requires you to make local changes, followed by running `/scripts/Initialize-Sandbox.ps1` to get started:
 
 1. Clone this repo (any path and folder name will do)
-2. Add your rdp files to the [ressources folder](template/ressources). Read the [suggestions docs](template//ressources/suggestions.md) for more info.
+2. Add your rdp files to the [resources folder](template/resources). Read the [suggestions docs](template//resources/suggestions.md) for more info.
 3. Add all the installer exe files you need to [the software template folder](template/software).
 4. Run [the init script](scripts/Initialize-Sandbox.ps1).  
    If you haven't installed Windows Sandbox, then run the script in an admin promt and with the `-AutoInstallWindowsSandbox` switch.

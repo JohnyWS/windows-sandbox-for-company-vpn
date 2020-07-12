@@ -8,9 +8,9 @@
 template/software
 !template/software/startup.template.cmd
 
-# Ignore all files in template/ressources except suggestions.md file:
-template/ressources
-!template/ressources/suggestions.md
+# Ignore all files in template/resources except suggestions.md file:
+template/resources
+!template/resources/suggestions.md
 
 # Always ignore output folder
 output
